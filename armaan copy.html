@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#circle{
+			width:100px;
+			height:100px;
+			background-color:lightblue;
+			border-radius:50%;
+			position:absolute;
+			transition:1s;
+/*			left:50px;
+*/		}
+	</style>
+</head>
+<body>
+
+	<div id="circle"></div>
+
+	<script type="text/javascript">
+		var circle = document.getElementById('circle');
+
+
+		function setPosition (){
+		circle.style.left = Math.random()*800 + "px";
+		circle.style.top = Math.random()*800 + "px";s
+
+
+	}
+
+	function disappear () {
+		circle.style.opacity = "0";
+	}
+
+		function appear () {
+		circle.style.opacity = "1";
+	}
+
+		setInterval(setPosition, 1000)
+
+				setInterval(disappear, 2000)
+
+								setInterval(appear, 3000)
+
+
+	</script>
+
+</body>
+</html>
