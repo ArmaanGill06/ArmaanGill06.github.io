@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		/*body{
+			background-image:url(https://img.freepik.com/free-photo/black-chalk-board-texture_89245-170.jpg?size=626&ext=jpg&ga=GA1.2.712546924.1599782400);
+			margin:0px;
+		}*/
+
+		.writing{
+			color:black;
+			font-size:10px;
+			display: relative;
+			display: inline-block;
+			margin:5px;
+			width:50px;
+			height:50px;
+			background-image:url(person.png);
+			background-size:contain;
+			background-repeat:no-repeat;
+		}
+	</style>
+</head>
+<body>
+<h1>This is how many chicken nuggets I have DEMOLISHED</h1>
+
+<script type="text/javascript">
+	
+	function makeBored (x){
+		let bored = document.createElement('div');
+		document.body.appendChild(bored);
+		bored.classList.add("writing");
+		bored.innerText=x;
+
+	};
+
+	// setInterval(makeBored, 500)
+
+for (let i=1;i<140000; i=i+1) {makeBored(i)}
+
+</script>	
+
+
+</body>
+</html>
